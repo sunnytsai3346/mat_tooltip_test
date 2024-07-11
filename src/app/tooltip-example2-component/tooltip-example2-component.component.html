@@ -1,0 +1,9 @@
+<div *ngIf="showTooltip">
+    <button mat-raised-button
+            matTooltip="Tooltip message"
+            [matTooltipDisabled]="tooltipDisabled">
+      Hover over me
+    </button>
+  </div>
+  
+  <button (click)="toggleTooltip()">Toggle Tooltip</button>

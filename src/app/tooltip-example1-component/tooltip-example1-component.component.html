@@ -1,0 +1,13 @@
+
+<div *ngIf="showTooltip">
+
+    <button mat-raised-button
+    [matTooltip]="tooltipText"
+    matTooltipPosition="above"
+    *ngIf="showTooltip"
+    (mouseover)="showTooltipForDelay()">
+    Hover to see tooltip
+    </button>
+</div>
+
+<button (click)="toggleTooltip()">Toggle1 Tooltip</button>
